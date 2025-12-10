@@ -1,0 +1,23 @@
+{
+	"name": "HttpGit",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpBaseLinkService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "ChaitanyaKulkarni001/Damac_Real_Estate_Raw_Data/refs/heads/main/Lookup_CurrencyRates.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
